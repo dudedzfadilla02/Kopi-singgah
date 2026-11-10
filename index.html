@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopi Singgah (Tailwind)</title>
+  <!-- Tailwind lewat CDN: butuh internet, tidak perlu npm -->
+   <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-[#eef2ec] font-serif leading-relaxed text-[#17302a]">
+
+  <!-- HEADER -->
+  <header class="flex flex-col items-center gap-3 bg-[#17302a] px-8 py-4 text-white md:flex-row md:justify-between">
+    <a href="#beranda" class="flex items-center gap-2.5">
+      <span class="grid size-10 place-items-center rounded-full bg-[#d9a521] font-bold text-[#17302a]">KS</span>
+      <span class="text-xl font-bold">Kopi Singgah</span>
+    </a>
+    <nav>
+      <ul class="flex gap-6">
+        <li><a href="#tentang" class="border-b-2 border-transparent hover:border-[#d9a521]">Tentang</a></li>
+        <li><a href="#menu" class="border-b-2 border-transparent hover:border-[#d9a521]">Menu</a></li>
+        <li><a href="#kontak" class="border-b-2 border-transparent hover:border-[#d9a521]">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BODY -->
+  <main id="beranda">
+
+    <section id="tentang" class="mx-auto max-w-3xl px-8 py-16">
+      <h1 class="mb-4 text-4xl font-bold leading-tight">Tempat singgah sebelum lanjut jalan.</h1>
+      <p>Kopi Singgah adalah kedai kopi kecil yang menyajikan biji kopi lokal, diseduh
+         satu cangkir demi satu cangkir. Datang untuk ngopi sebentar, mengerjakan tugas,
+         atau sekadar menunggu hujan reda.</p>
+    </section>
+
+    <section id="menu" class="bg-white px-8 py-16">
+      <h2 class="mx-auto mb-6 max-w-5xl text-2xl font-bold">Menu andalan</h2>
+      <div class="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
+        <article class="rounded-lg border-2 border-[#17302a] p-6">
+          <h3 class="mb-2 font-bold">Kopi Susu Gula Aren</h3>
+          <p>Espresso, susu segar, dan gula aren. Manisnya pas.</p>
+          <p class="mt-4 font-bold">Rp 22.000</p>
+        </article>
+        <article class="rounded-lg border-2 border-[#17302a] p-6">
+          <h3 class="mb-2 font-bold">V60 Single Origin</h3>
+          <p>Biji pilihan bulan ini, diseduh manual tanpa gula.</p>
+          <p class="mt-4 font-bold">Rp 28.000</p>
+        </article>
+        <article class="rounded-lg border-2 border-[#17302a] p-6">
+          <h3 class="mb-2 font-bold">Roti Bakar Cokelat</h3>
+          <p>Roti tebal dengan cokelat leleh, cocok untuk teman ngopi.</p>
+          <p class="mt-4 font-bold">Rp 18.000</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="kontak" class="flex flex-col items-center gap-8 bg-[#17302a] px-8 py-10 text-center text-white md:flex-row md:items-start">
+    <div class="flex flex-1 items-center gap-2.5">
+      <span class="grid size-10 place-items-center rounded-full bg-[#d9a521] font-bold text-[#17302a]">KS</span>
+      <span class="text-xl font-bold">Kopi Singgah</span>
+    </div>
+    <div class="flex-1 md:text-center">
+      <p>Latihan halaman statis dengan header, dua section, dan footer.</p>
+    </div>
+    <address class="flex-1 not-italic md:text-right">
+      <p>Jl. Contoh No. 12, Karawang</p>
+      <p>halo@kopisinggah.example</p>
+      <p>Buka setiap hari, 08.00 – 22.00</p>
+    </address>
+  </footer>
+
+</body>
+</html>
